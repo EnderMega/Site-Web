@@ -33,15 +33,43 @@ header {
     flex-wrap: wrap;
 }
 
-.logo h1 {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
+.logo a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
 }
 
-.logo span {
-    font-size: 0.9rem;
-    color: #00ffcc;
+.logo a::before {
+    content: "";
+    display: block;
+    /* Caminho para a sua imagem */
+    background-image: url('../imagens/logo.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    
+    /* DEFINA O TAMANHO DA SUA IMAGEM AQUI */
+    width: 200px;
+    height: 50px;  
+}
+
+.logo a::after {
+    content: "Que toby fox esteja com você."; 
+    
+    font-size: 0.5rem;
+    color: #ff0000;
     font-style: italic;
+
+    font-weight: normal;
+    
+}
+
+.logo a:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 nav ul {
@@ -58,12 +86,12 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: #00ffcc;
+    color: #ff0000;
 }
 
-/* BANNER PRINCIPAL */
+/* banner index */
 .banner {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://picsum.photos/id/180/1200/400') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner.png) no-repeat center top/cover;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -85,7 +113,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .btn {
     display: inline-block;
-    background-color: #00ffcc;
+    background-color: #ffffff;
     color: #111;
     padding: 12px 24px;
     text-decoration: none;
@@ -97,10 +125,10 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .btn:hover {
-    background-color: #00cca3;
+    background-color: #ff0000;
 }
 
-/* GRIDS FLEXBOX (Destaques da Home e Sobre Nós) */
+/* flexbox da home e sobre nós */
 .flex-grid, .mvv-grid {
     display: flex;
     gap: 20px;
@@ -121,7 +149,7 @@ nav ul li a:hover, nav ul li a.active {
     padding-left: 20px;
 }
 
-/* GRID DE PRODUTOS (FLEXBOX) */
+/* grid dos produtos */
 .produtos-grid {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +181,7 @@ nav ul li a:hover, nav ul li a.active {
 .produto-card .preco {
     display: block;
     font-weight: bold;
-    color: #00cca3;
+    color: #cc0000;
     font-size: 1.2rem;
     margin-top: 10px;
 }
@@ -190,7 +218,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .miniatura:hover, .miniatura.ativa {
-    border-color: #00ffcc;
+    border-color: #ff0000;
     transform: scale(1.05);
 }
 
