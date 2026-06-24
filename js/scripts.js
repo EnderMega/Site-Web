@@ -27,29 +27,32 @@ $(document).ready(function() {
         // Remove avisos de erros antigos para não acumular na tela
         $('.msg-erro').remove();
 
-        // 1. Validação do Nome (Obrigatório)
         var nome = $('#nome').val().trim();
         if (nome === "") {
             $('#nome').after('<span class="msg-erro">Por favor, preencha o seu nome completo.</span>');
             formulárioValido = false;
         }
 
-        // 2. Validação do E-mail (Formato válido)
         var email = $('#email').val().trim();
-        var filtroEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var filtroEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
         if (!filtroEmail.test(email)) {
             $('#email').after('<span class="msg-erro">Digite um endereço de e-mail válido.</span>');
             formulárioValido = false;
         }
+		
+		var telefone = $('#telefone').val().trim();
+		var filtroTelefone = /^\(\d{2}\)\s\d{5}-\d{4}$/;
+		if (!filtroTelefone.test(telefone)) {
+			$('#telefone').after('<span class="msg-erro">Digite um telefone válido no formato (00) 00000-0000.</span>');
+			formulárioValido = false;
+		}
 
-        // 3. Validação da Mensagem (Mínimo de 20 caracteres)
-        var mensagem = $('#mensagem').val().trim();
+		var mensagem = $('#mensagem').val().trim();
         if (mensagem.length < 20) {
             $('#mensagem').after('<span class="msg-erro">Sua mensagem está muito curta (mínimo de 20 caracteres).</span>');
             formulárioValido = false;
         }
 
-        // Se encontrar qualquer erro, impede o formulário de ser enviado/recarregado
         if (!formulárioValido) {
             event.preventDefault();
         } else {
