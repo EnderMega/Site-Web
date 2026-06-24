@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Shirts | Produtos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Quantum Shirts</h1>
+            <span>"Vista o conhecimento."</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="precos.html">Preços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- REQUISITO: OPÇÃO 2 - GALERIA EM JQUERY (Destaque do Produto) -->
+        <section class="galeria-secao">
+            <h2>Destaque da Semana: Camiseta CSS Grid</h2>
+            <p>Clique nas miniaturas abaixo para ver detalhes do nosso produto mais vendido.</p>
+            
+            <div class="galeria-container">
+                <div class="foto-principal">
+                    <!-- Usando imagens temporárias do Placeholder para o código já vir funcionando -->
+                    <img id="imagem-destaque" src="https://picsum.photos/id/26/500/500" alt="Camiseta Principal">
+                </div>
+                <div class="miniaturas">
+                    <img class="miniatura ativa" src="https://picsum.photos/id/26/500/500" alt="Frente da Camiseta">
+                    <img class="miniatura" src="https://picsum.photos/id/36/500/500" alt="Verso da Camiseta">
+                    <img class="miniatura" src="https://picsum.photos/id/46/500/500" alt="Detalhe da Estampa">
+                </div>
+            </div>
+        </section>
+
+        <!-- REQUISITO: LISTAR PELO MENOS 6 MODELOS DE CAMISETAS -->
+        <section class="todos-produtos">
+            <h2>Nossa Coleção</h2>
+            <div class="produtos-grid">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <img src="https://picsum.photos/id/103/300/300" alt="Camiseta 1">
+                    <h3>Camiseta Algoritmo</h3>
+                    <p>Para quem resolve problemas linha por linha.</p>
+                    <span class="preco">R$ 49,00</span>
+                </div>
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <img src="https://picsum.photos/id/104/300/300" alt="Camiseta 2">
+                    <h3>Camiseta Cyberpunk</h3>
+                    <p>Estilo futurista com estampa em neon refletivo.</p>
+                    <span class="preco">R$ 49,00</span>
+                </div>
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <img src="https://picsum.photos/id/106/300/300" alt="Camiseta 3">
+                    <h3>Camiseta Schrödinger</h3>
+                    <p>A estampa está bonita e feia ao mesmo tempo.</p>
+                    <span class="preco">R$ 49,00</span>
+                </div>
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <img src="https://picsum.photos/id/107/300/300" alt="Camiseta 4">
+                    <h3>Camiseta NASA Retro</h3>
+                    <p>O clássico visual espacial em algodão premium.</p>
+                    <span class="preco">R$ 55,00</span>
+                </div>
+                <!-- Produto 5 -->
+                <div class="produto-card">
+                    <img src="https://picsum.photos/id/108/300/300" alt="Camiseta 5">
+                    <h3>Camiseta Math Art</h3>
+                    <p>Equações matemáticas que formam arte geométrica.</p>
+                    <span class="preco">R$ 49,00</span>
+                </div>
+                <!-- Produto 6 -->
+                <div class="produto-card">
+                    <img src="https://picsum.photos/id/109/300/300" alt="Camiseta 6">
+                    <h3>Camiseta Coffee & Code</h3>
+                    <p>O combustível oficial do desenvolvedor.</p>
+                    <span class="preco">R$ 55,00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Quantum Shirts - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts JQuery e Custom -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
