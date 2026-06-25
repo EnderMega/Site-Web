@@ -25,6 +25,7 @@ Tobyfox, não nos processe :(
 (Tanto faz de onde pega as imagens)
 
 ## Página Tabela de Preços
+(Feito)  
 Utilizar TABELA, exemplo:
 
 Modelo Tamanho PM   G
@@ -44,7 +45,7 @@ Física R$49    R$49 R$55
 - [x] Mensagem
 
 ## Requisitos de JavaScript/jQuery
-- Opção 1 (Feito)
+- Opção 1 (Feito)  
 Exemplos:
 - Nome obrigatório
 - E-mail válido
