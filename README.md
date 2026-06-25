@@ -1,25 +1,26 @@
 # Site-Web
 Site para a matéria de WEB :D
+Tobyfox, não nos processe :(
 
 ## Coisas a fazer:
-- [ ] Nome da marca
-- [ ] Logotipo
-- [ ] Slogan
-- [ ] Identidade do site
+- [x] Nome da marca
+- [x] Logotipo
+- [x] Slogan
+- [x] Identidade do site
 
 ## Estrutura mínima
-- [ ] Banner principal
-- [ ] Apresentação da empresa
-- [ ] Destaques da marca
-- [ ] Menu de navegação
+- [x] Banner principal
+- [x] Apresentação da empresa
+- [x] Destaques da marca
+- [x] Menu de navegação
 (Utilizar elementos semânticos)
 
 ## Página produtos
-- [ ] 6 modelos de camisetas
-- [ ] Imagem de cada produto
-- [ ] Nome
-- [ ] Descrição
-- [ ] Preço
+- [x] 6 modelos de camisetas
+- [x] Imagem de cada produto
+- [x] Nome
+- [x] Descrição
+- [x] Preço
 
 (Tanto faz de onde pega as imagens)
 
@@ -30,20 +31,20 @@ Modelo Tamanho PM   G
 Física R$49    R$49 R$55
 
 ## Página Sobre
-- [ ] História da empresa
-- [ ] Missão
-- [ ] Visão
-- [ ] Valores
+- [x] História da empresa
+- [x] Missão
+- [x] Visão
+- [x] Valores
 
 ## Página Contato
-- [ ] Nome
-- [ ] E-mail
-- [ ] Telefone
-- [ ] Assunto
-- [ ] Mensagem
+- [x] Nome
+- [x] E-mail
+- [x] Telefone
+- [x] Assunto
+- [x] Mensagem
 
 ## Requisitos de JavaScript/jQuery
-- Opção 1
+- Opção 1 (Feito)
 Exemplos:
 - Nome obrigatório
 - E-mail válido
